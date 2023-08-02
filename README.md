@@ -20,7 +20,7 @@ Opshort is a free and open-source URL shortener designed to prioritize simplicit
 
 ## Installation
 
-Opshort is a web-based application, so no installation is required. Visit our website at [www.opshort.com](https://www.opshort.com) and start shortening URLs right away.
+Opshort is a web-based application, so no installation is required. Visit our website at [www.opshort.com](https://open-shorter.vercel.app) and start shortening URLs right away.
 
 ## Self setup
 
