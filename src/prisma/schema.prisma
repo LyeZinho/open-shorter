@@ -6,6 +6,70 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mysql"
   url      = env("DATABASE_URL")
 }
+
+// --------------------------------------
+// Model UrlRecord
+// (this is for urls that are shortened)
+// --------------------------------------
+
+model UrlRecord {
+  id        Int      @id @default(autoincrement())
+  url       String
+  shortCode String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  expiresAt DateTime?
+}
+
+// --------------------------------------
+// Click Record
+// --------------------------------------
+
+model ClickRecord {
+  id        Int      @id @default(autoincrement())
+  urlRecord String
+  clientIp String
+  browserName String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// --------------------------------------
+// Model User
+// --------------------------------------
+
+model User {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// --------------------------------------
+// Model UserUrlRecord
+// --------------------------------------
+
+model UserUrlRecord {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  urlRecord Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// --------------------------------------
+// Model UserSession
+// --------------------------------------
+
+model UserSession {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  token     String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
