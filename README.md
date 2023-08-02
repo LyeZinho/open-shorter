@@ -48,11 +48,11 @@ We welcome contributions from the community! If you would like to contribute to 
 
 ## Feedback and Support
 
-We appreciate your feedback and are here to assist with any issues you encounter. If you have any questions or need support, please reach out to us through [support@opshort.com](mailto:support@opshort.com).
+We appreciate your feedback and are here to assist with any issues you encounter. If you have any questions or need support, please reach out to us through [Discord Server](https://discord.gg/skwJuprZAP).
 
 ## License
 
-Opshort is released under the [MIT License](https://github.com/LyeZinho/open-shorter/blob/main/LICENSE), granting you the freedom to use, modify, and distribute the software.
+Opshort is released under the [GNU AFFERO GENERAL PUBLIC LICENSE](https://github.com/LyeZinho/open-shorter/blob/main/LICENSE), granting you the freedom to use, modify, and distribute the software.
 
 ---
 
