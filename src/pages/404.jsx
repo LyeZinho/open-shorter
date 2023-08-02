@@ -12,6 +12,9 @@ export default function PageNotFound() {
           <p className="text-md text-center font-bold text-primary-50 mt-10 ">
             If you think this is a mistake, please contact the owner of the url. <br />If you are the owner of the url, please create a new one.
           </p>
+          <p className="text-md text-center font-bold text-primary-50 mt-10 ">
+            If you trying to see the metrics of a url, and it dont work, <br />the reason is that the url dont have any clicks yet.
+          </p>
         </div>
 
         <div>

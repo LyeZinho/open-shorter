@@ -91,7 +91,6 @@ export default function UrlImput() {
         </div>
         <div>
           <Button
-            buttonType={"solid"}
             rounded={false}
             block={false}
             onClick={handleUrlSubmit}
