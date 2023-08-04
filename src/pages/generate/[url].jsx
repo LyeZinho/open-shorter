@@ -29,7 +29,7 @@ export default function UrlInput({ data }) {
                     <h1 className="cursor-pointer text-xl text-center font-bold text-primary-50 mt-10 hover:text-primary-700 transition duration-500 ease-in-out"
                         // On click, copy the url to the clipboard
                         onClick={() => {
-                            navigator.clipboard.writeText(`https://urlshortener-psi.vercel.app/r/${urlData.shortCode}`);
+                            navigator.clipboard.writeText(`https://opshort.vercel.app/r/${urlData.shortCode}`);
                             // setAlert({ show: true }); transition for showing the alert
                             setAlert({ show: true });
                             setTimeout(() => {
